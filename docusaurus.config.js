@@ -15,15 +15,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://tmt514.github.io/',
+  url: 'https://NTU-CSIE1210.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cp-training/',
+  baseUrl: '/weekly-practice/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'tmt514', // Usually your GitHub org/user name.
-  projectName: 'cp-training', // Usually your repo name.
+  organizationName: 'NTU-CSIE1210', // Usually your GitHub org/user name.
+  projectName: 'weekly-practice', // Usually your repo name.
 
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tmt514/cp-training/tree/main/',
+            'https://github.com/NTU-CSIE1210/weekly-practice/tree/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -55,7 +55,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/tmt514/cp-training/tree/main/',
+            'https://github.com/NTU-CSIE1210/weekly-practice/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',

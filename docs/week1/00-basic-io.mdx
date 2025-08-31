@@ -1,56 +1,12 @@
 ---
 sidebar_position: 1
 exercises: ['kattis-velkomin', 'kattis-twostones', 'kattis-rectanglearea']
-title: 'Basic I/O'
+title: 'Week 1 Practice Tasks'
 ---
 
 <DisplayProgress names={frontMatter.exercises}/>
 
-# Basic I/O
-
-
-Most competitive programming challenges, unlike solving Leetcode problems, requires the participants to handle input and output.
-The most common scenario is to read **plain text** from (and write to) the [Standard I/O](https://en.wikipedia.org/wiki/Standard_streams).
-Thus, we should equip ourselves with the methods reading content from the input and transform them into appropriate datatypes.
-
-<Tabs groupId="programming-language">
-  <TabItem value="java" label="Java">
-
-## Standard Input / Output
-
-The standard I/O in java is represented as `System.in` and `System.out`.
-
-## The `Scanner` Class
-
-The Scanner class in java provides very basic functionality of reading tokenized data from a file.
-Below is an example that reads an integer `number` and prints it to the standard output.
-
-```java
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println("You entered: " + number);
-    }
-}
-```
-
-  Here are a few common methods that we often use (also see [W3School](https://www.w3schools.com/java/java_user_input.asp)):
-
-  * `nextDouble()`: read a floating point number. (Never use `Float`!)
-  * `nextInt()`: read a 32-bit integer.
-  * `nextLong()`: read a 64-bit integer.
-  * `nextLine()`: read entire line as a string.
-
-  </TabItem>
-  <TabItem value="py" label="Python">
-
-  </TabItem>
-</Tabs>
-
-## Exercises
+# 第一週練習題列表
 
 | Mark | Problem |  Notes   | 
 |----------|---------|----------|
