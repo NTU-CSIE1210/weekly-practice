@@ -15,7 +15,7 @@ export function InnerLocalButton({name}) {
   } else if (toggle === "in-progress") {
     icon = (<FontAwesomeIcon icon={faExclamation} size="lg" />);
   }
-  return (<div className={`lb ${toggle||"none"}`} style={{cursor: 'pointer'}} onClick={() => {
+  return (<div className={`lb ${toggle||"none"}`} style={{cursor: 'pointer', userSelect: 'none'}} onClick={() => {
     if (toggle === null || toggle === undefined || toggle === "none") {
       setToggle("solved")
     } else if (toggle === "solved") {
