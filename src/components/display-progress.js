@@ -17,6 +17,9 @@ export function InnerDisplayProgress({names}) {
     return icon;
   }
   const [state, setState] = useState(getProgress(names))
+  const total = state.length;
+  const solved = state.filter((v) => v === "solved").length;
+  const percent = total > 0 ? Math.round((solved / total) * 100) : 0;
   const squares = state.map((v, i) => (<div className={`sq ${v||"none"}`} key={i}><div className='sq-inner'>{getFA(v)}</div></div>))
   useEffect(() => {
     const handleStorage = () => {
@@ -28,7 +31,10 @@ export function InnerDisplayProgress({names}) {
     window.addEventListener('storage', handleStorage)
     return () => window.removeEventListener('storage', handleStorage)
   }, [])
-  return (<div className="sq-outer">{squares}</div>);
+  return (<div>
+          <div className="sq-outer">{squares}</div>
+          <div className="progress-summary">✅ 已完成：{solved} / {total}（{percent}%）</div>
+          </div>);
 }
 
 export default function DisplayProgress({names}) {
